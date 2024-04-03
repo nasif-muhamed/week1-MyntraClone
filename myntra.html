@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Clone</title>
+  <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-256/myntra-2709168-2249158.png" type="image/icon type">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+<!-- Header starts -->
+  <header> 
+
+    <!-- 1. Navbar starts -->
+    <div class="navbar">
+
+      <!-- 1. Logo part -->
+      <div class="logo">
+        <a href="">
+          <img src="https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png" alt="">
+        </a>
+      </div>
+      
+      <!-- 2. list of items -->
+      <nav class="navbarMain">
+        <div>
+          <a class="navLink" href="">Men</a>
+        </div>
+        <div>
+          <a class="navLink" href="">Women</a>
+        </div>
+        <div>
+          <a class="navLink" href="">Kids</a>
+        </div>
+        <div>
+          <a class="navLink" href="">Home & Living</a>
+        </div>
+        <div>
+          <a class="navLink" href="">Beauty</a>
+        </div>
+        <div>
+          <a class="navLink" href="">Studio</a>
+          <span class="navNew navLink">
+           New
+          </span>
+        </div>
+      </nav>
+
+      <!-- 3. search bar -->
+      <div class="search">        
+        <div class="searchIconWrap">
+          <div class="searchIcon">
+            <img src="https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png" alt="">
+          </div>  
+        </div>
+        <input class="searchBar" type="text" placeholder="Search for products, brands and more">
+      </div>
+
+      <!-- 4. right part for user actions -->
+      <div class="navActions">
+        <div class="iconWrap">
+          <div class="icon">
+            <img class="profile" src="https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png" alt="">
+          </div>
+          <span>Profile</span>
+        </div>
+        <a class="iconWrap" href="">
+          <div class="icon">
+            <img class="wishlist"  src="https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png" alt="">
+          </div>
+          <span>Wishlist</span>
+        </a>
+        <a class="iconWrap" href="">
+          <div class="icon">
+            <img class="bag"  src="https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png" alt="">
+          </div>
+          <span>Bag</span>
+        </a>
+      </div> 
+    </div>
+    <!-- 2. Side bar starts -->
+    <div class="sideBar">
+      <div class="arrow"></div>
+      <div class="sideOfferText">FLAT ₹200 OFF</div>
+      <div class="bellIcon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+          <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+<!-- Header ends -->
+
+<!-- Main starts -->
+  <main>
+    <!-- main is devided into two sections a carousal section and a section of multiple grids -->
+    <section>
+      <!-- 1. Carousel created with the help of bootstrap -->
+      <div class="styleSlider">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+            <!-- rounded buttons at the bottom -->
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 1"></button>
+          </div>
+          <!-- sliding image's container -->
+          <div class="carousel-inner">
+            <!-- image 1 -->
+            <div class="carousel-item active" data-bs-interval="2000">
+              <a href="https://www.myntra.com/men-footwear?f=Brand%3ALancer&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/a53b7f7e-37ab-4319-a1b4-5d9c0cca68601650180659343-Lancer_Desk.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <!-- image 2 -->
+            <div class="carousel-item" data-bs-interval="2000">
+              <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3AAllen%20Solly%2CArrow%2CBlackberrys%2CColorPlus%2CDENNISON%2CEthnix%20by%20Raymond%2CExcalibur%2CHancock%2CINVICTUS%2CJAINISH%2CLouis%20Philippe%2CLouis%20Philippe%20Ath.Work%2CMarks%20%26%20Spencer%2CPark%20Avenue%2CPeter%20England%2CPeter%20England%20Elite%2CRaymond%2CTHE%20BEAR%20HOUSE%2CV%20Dot%2CVan%20Heusen%2CaLL%3A%3ACategories%3AShirts%2CShorts%2CTrousers%2CTshirts%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/e384cb32-690c-4ccf-a6cb-61df36960bb21651599573972-Workwear_Desk.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <!-- image 3 -->
+            <div class="carousel-item" data-bs-interval="2000">
+              <a href="https://www.myntra.com/cr7?sort=popularity">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/b54399f0-6ed5-44b3-84b0-e9d5c1657aaa1651599573991-CR7_Desk_Baner.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <!-- image 4 -->
+            <div class="carousel-item" data-bs-interval="2000">
+              <a href="https://www.myntra.com/sportscategory?f=Categories%3ASports%20Shoes%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/3/846beb79-ada7-48c3-a6c6-4448f276c2111651599573979-Sports-Shoes_Desk.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <!-- image 5 -->
+            <div class="carousel-item" data-bs-interval="2000">
+              <a href="https://www.myntra.com/accessories?f=Categories%3ABackpacks%2CLaptop%20Bag%2CMessenger%20Bag%2CTrolley%20Bag&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/abd2b07f-954c-43ad-ba39-bfa50527d0641650180659364-Backpacks---Luggage_Desk.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <!-- image 6 -->
+            <div class="carousel-item" data-bs-interval="2000">
+              <a href="https://www.myntra.com/footwear?f=Brand%3ACalvin%20Klein%2CDucati%2CH%26M%2CJack%20%26%20Jones%2CLevis%2CLouis%20Philippe%2CRuosh%2CTommy%20Hilfiger%2CUnited%20Colors%20of%20Benetton%2CV8%20by%20Ruosh%3A%3ACategories%3ACasual%20Shoes%2CSports%20Shoes%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A10.0_100.0_10.0%20TO%20100.0">
+                <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/4/17/eb6408d8-b413-49f7-8525-317fddba53821650180659351-Casual---Sports-Shoes_Desk.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- this section can be devided into 8 rows of image grids/collages and it's heading -->
+      <!-- row: 1 (topBrands) -->
+      <div class="dealsText"> <!-- Header first collage/row -->
+        <h4 class="deals">BIGGEST DEALS ON TOP BRANDS</h4>
+        <h4 class="dealsSub"></h4>
+      </div>
+      <div class="itemsContainer"> <!-- first collage -->
+        <div class="topBrands">
+          <!-- image column 1 -->
+          <div class="itemColumn">
+            <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3AU.S.%20Polo%20Assn.%2CU.S.%20Polo%20Assn.%20Denim%20Co.%2CU.S.%20Polo%20Assn.%20Kids%2CU.S.%20Polo%20Assn.%20Tailored%2CU.S.%20Polo%20Assn.%20Women%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+              <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/1dce9c3e-77fa-48f1-85a3-d3c136c1d73e1598892377652-USPA.jpg" alt="">
+            </a>
+          </div>
+          <!-- image column 2 -->
+          <div class="itemColumn">
+            <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3ADenizen%20From%20Levis%2CLevis%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+              <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/3fa337a0-c792-4038-8d12-50d463c189a11598892377363-Levis.jpg" alt="">
+            </a>
+          </div>
+          <!-- image column 3 -->
+          <div class="itemColumn">
+            <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3ATommy%20Hilfiger%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+              <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/af31285e-f6a3-426e-bbea-0aedef9da17c1598892377537-Tommy-Hilfiger.jpg" alt="">
+            </a>
+          </div>
+          <!-- image column 4 -->
+          <div class="itemColumn">
+            <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3AUnited%20Colors%20of%20Benetton%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A40.0_100.0_40.0%20TO%20100.0">
+              <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/8d5afb84-a464-40af-9971-2e9f0827e9b71598892377591-UCB.jpg" alt="">
+            </a>
+          </div>
+
+          <!-- image column 1 -->
+          <div class="itemColumn">
+            <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3ANike%3A%3AGender%3Amen%2Cmen%20women">
+              <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/a7d3676a-9694-4a84-835e-0408fdad884b1598892377407-Nike.jpg" alt="">
+            </a>
+          </div>
+          <!-- image column 2 -->
+          <div class="itemColumn">
+            <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3APuma%2Cone8%20x%20PUMA%3A%3AGender%3Amen%2Cmen%20women&rf=Discount%20Range%3A30.0_100.0_30.0%20TO%20100.0">
+              <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/cec595c6-c7ec-4259-af8b-997a33a09ce71598892377444-Puma.jpg" alt="">
+            </a>
+          </div>
+          <!-- image column 3 -->
+          <div class="itemColumn">
+            <a href="https://www.myntra.com/myntra-fashion-store?f=Brand%3ASkechers%3A%3AGender%3Amen%2Cmen%20women">
+              <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/0206da63-a7cc-4f83-8527-90d7dc74706b1598892377489-Skechers.jpg" alt="">
+            </a>
+          </div>
+          <!-- image column 4 -->
+          <div class="itemColumn">
+            <a href="https://www.myntra.com/crocs?f=Gender%3Amen%2Cmen%20women">
+              <img src="https://assets.myntassets.com/f_webp,w_245,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/31/d977e7ac-67dd-4fa6-b922-fe0057385dfa1598892377205-Crocs.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row: 2 (catogories) -->
+      <div class="dealsText">
+        <h4 class="deals">CATEGORIES TO BAG</h4>
+        <h4 class="dealsSub"></h4>
+      </div>
+      
+      <div class="itemsContainer">
+        <div class="catogories">
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/89f1bd9d-3a28-456d-888a-beff717a06f81594222908155-Shirts.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/9ff1f34e-9242-47fd-9566-e7d7a5c240511594222908483-T-shirt.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/720cf6ef-3be4-4825-8211-0125c942e3821594222907960-Jeans.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/2bac5e2d-337b-42c0-88c7-3d4e2dc464141594222908262-Shorts-_-Trousers.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/ae14f627-9fd9-41ce-80a4-f107c316c7eb1594222907625-Casual-shoes.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/8/f0f9b81a-b9d5-4b8b-94d5-ea878fa9b18e1594222834121-Infant-Essential.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row: 3 (brands)-->
+      <div class="dealsText">
+        <h4 class="deals">EXPLORE TOP BRANDS</h4>
+        <h4 class="dealsSub"></h4>
+      </div>
+
+      <div class="itemsContainer">
+        <div class="brands">
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/a88b9390-5adb-493b-a1b3-702c59ccf53a1598348260502-Nike.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/c9f66558-feab-4d76-aa3c-adc68d81dce21598348260415-Levis.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/5/178c1e5d-69f2-402f-a2a5-ef44700a0f691596640983793-Roadster---.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/25/085719b1-c71e-4f47-950c-9a6b7f291fac1598348260370-Jack-_-Jones.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/5/774f42c4-f459-4514-9b90-cf8a60a5f68c1596644478087-hrx30.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row: 4 (luxe) -->
+      <div class="dealsText">
+        <h4 class="deals">MYNTRA LUXE</h4>
+        <h4 class="dealsSub"></h4>
+      </div>
+
+      <div class="itemsContainer">
+        <div class="luxe">
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/85fa3b9b-9e7c-43a5-9de0-1cb32f3180151637149111314-MP-Farah.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/480f4bde-1d72-4517-be6d-af2dfef7528e1637149111337-MP-Collective.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/cadd8457-b8ec-464c-9bc6-6082a24075591637149111331-MP-OriginalPenguin.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/e185b9a2-0c12-4379-a85c-a4ceed2fe9931637149111326-MP-D1Milano.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/ab5c5029-d24f-4789-979c-d4910801ea191637149111321-MP-HUGOBoss.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/17/621ce33b-3383-4347-99bf-2038b95f27151637149369429-MP-Ducati.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row: 5 (indianWear) -->
+      <div class="dealsText">
+        <h4 class="deals">TRENDING IN INDIAN WEAR</h4>
+        <h4 class="dealsSub"></h4>
+      </div>
+
+      <div class="itemsContainer">
+        <div class="indianWear">
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/a9f68785-e282-425a-b270-c978c387b0f31597840342635-Content-ethnicwear-color-whites.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/0d1e0a28-3088-4719-a692-4cdaa7a33cc71597840342726-Content-ethnicwear-occasion-casuallook.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/9d248917-d1b0-4910-8de0-4ed7c2b4af8e1595935030939-Content-ethnicwear-trends-printedkurtaset.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/83d9ca97-4aa3-46ce-bd28-b135d3b94a021595935030673-Content-ethnicwear-essentials-everydaykurtas.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/9e4fb95e-6268-49c5-9ed1-e6b1bd4b5efd1595935030880-Content-ethnicwear-trend-fashionmeetcomfort.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row: 6 (sports) -->
+      <div class="dealsText">
+        <h4 class="deals">TRENDING IN SPORTS WEAR</h4>
+        <h4 class="dealsSub"></h4>
+      </div>
+
+      <div class="itemsContainer">
+        <div class="sports">
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/8becef46-f822-4874-b92a-a7cc7f58819d1597841103131-Content-sportswear-brand-nike.png" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/7472ab66-adf2-4d1d-9379-4770a73c1efe1597841103172-Content-sportswear-brand-proline.png" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/65bafbc5-f83b-4158-8168-f7553043814c1597841103082-Content-sportswear-brand-Asics.png" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/4aa58fe6-8c61-4e37-9fa8-436c31aecb211597840566511-Content-sportswear-essentials-activewear.png" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/8/21/eedc6c0c-c28b-4ccb-952f-a302c96c59ba1598030134978-Content-mostselling-Sportswear-Nikerevolution.jpeg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row: 7 (footwear)-->
+      <div class="dealsText">
+        <h4 class="deals">TRENDING IN FOOTWEAR</h4>
+        <h4 class="dealsSub"></h4>
+      </div>
+
+      <div class="itemsContainer">
+        <div class="footwear">
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/647e166b-f645-443a-892d-df84ee345e781595935221231-Content-Footwear-men-Neutral-shades.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/9654b0f9-42a9-4111-a4b7-27b26c5a22d41595935221284-Content-Footwear-Unisex-Sneakers-for-Dancers_.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2020/8/20/be0b0d6f-7c72-4752-859f-ee44902ff7171597912691244-Content-footwear-trend-sneakersmen.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/a84d687a-1ff3-4b06-a47b-48021ba7cec11597840342959-Content-footwear-occasion-outbackoutdoor.png" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/49dd1ce9-d627-4c6e-b544-4be7e1f24a091597840342867-Content-footwear-essentials-flipflops.jpg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- row: 8 (accessories)-->
+      <div class="dealsText">
+        <h4 class="deals">TRENDING IN ACCESSORIES</h4>
+        <h4 class="dealsSub"></h4>
+      </div>
+
+      <div class="itemsContainer">
+        <div class="accessories">
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/2bcf907c-bc21-44cb-9021-7575a963b0ef1595934830671-Content-Accesories-Unisex-True-wirless-lets-get-free.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/7/28/bddd9c73-e4f1-43c0-a073-2ff3c0e376b51595934830554-Content-Accesories-men-Sporty-Watches_.jpg" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/5e68d729-b955-431c-930c-931d8b452d421597840217983-Content-accessories-color-white.png" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/8363b55c-446f-4de2-bc5b-e75fd6fdfb2d1597840217862-Content-accessories-brand-fastrack.png" alt="">
+            </a>
+          </div>
+          <div class="itemColumn">
+            <a href="">
+              <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2020/8/19/274b3659-420d-43c2-8e4c-17249e6eaf8d1597840218139-Content-accessories-trend-minimalist.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<!-- main ends -->
+
+<!-- footer starts -->
+  <footer>
+    <div class="footerContainer">
+      <!-- footer is devided into 3 parts -->
+      <!-- 1. Menu of their products and services -->
+      <div class="listOfContents">
+        <div class="list">
+          <div>
+            <p>
+              <a href="">ONLINE SHOPPING</a>
+            </p>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Kids</a>
+            <a href="">Home & Living</a>
+            <a href="">Beauty</a>
+            <a href="">Gift Cards</a>
+            <a href="">Myntra Insider</a>
+          </div>
+          <div>
+            <p>
+              <a href="">USEFUL LINKS</a>
+            </p>
+            <a href="">Blog</a>
+            <a href="">Career</a>
+            <a href="">Site Map</a>
+            <a href="">Corporate Information</a>
+            <a href="">Whitehat</a>
+            <a href="">Cleartrip</a>
+          </div>
+          <div></div>
+        </div>
+        <div class="list">
+          <div>
+            <p>
+              <a href="">CUSTOMER POLICIES</a>
+            </p>
+            <a href="">Contac Us</a>
+            <a href="">FAQ</a>
+            <a href="">T&C</a>
+            <a href="">Terms of Use</a>
+            <a href="">Track Order</a>
+            <a href="">Shipping</a>
+            <a href="">Cancellation</a>
+            <a href="">Returns</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Grievance Officer</a>
+
+          </div>
+        </div>
+        <div  class="big_list">
+          <div class="big_list_content">
+            <p>
+              <a class="big_list_head" href="">EXPERIENCE MYNTRA APP ON MOBILE</a>
+            </p>
+            <a href="">
+              <img class="OS" src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png" alt="">
+            </a>
+            <a href="">
+              <img class="OS" src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png" alt="">
+            </a>
+          </div>
+          <div class="big_list_content">
+            <p>
+              <a class="big_list_head" href="">KEEP IN TOUCH</a>
+            </p>
+            <a href="">
+              <img class="media" src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png" alt="">
+            </a>
+            <a href="">
+              <img class="media" src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png" alt="">
+            </a>
+            <a href="">
+              <img class="media" src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png" alt="">
+            </a>
+            <a href="">
+              <img class="media" src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="big_list">
+          <div class="return">
+            <a href="">
+              <img class="originalImg" src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png" alt="">
+            </a>
+            <div class="originalText"><strong>100% ORIGINAL </strong>
+              guarantee for <br> all products at myntra.com 
+            </div>
+          </div>
+          <div class="return">
+            <a href="">
+              <img class="returnImg" src="https://assets.myntassets.com/assets/images/retaillabs/2023/5/22/becb1b16-86cc-4e78-bdc7-7801c17947831684737106127-Return-Window-image.png" alt="">
+            </a>
+            <div class="originalText"><strong>Return within 14days </strong>
+              of <br> receiving your order 
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. includes Popular searchs and ©copyright part -->
+      <div class="popular_search">
+        <div class="popular_head">POPULAR SEARCHES </div>
+        <div class="search_iterms">
+          <a href="">Sherwani</a>|
+          <a href="">Track Pants</a>|
+          <a href="">Blazers</a>|
+          <a href="">Sweaters For Men</a>| 
+          <a href="">Men Wedding Dresses</a>| 
+          <a href="">Kurta Pajama</a>| 
+          <a href="">Raincoats</a>| 
+          <a href="">Shorts</a>| 
+          <a href="">Trousers</a>| 
+          <a href="">Waistcoat</a>| 
+          <a href="">Inner Wear</a>| 
+          <a href="">Nightwear</a>| 
+          <a href="">Jeans</a>| 
+          <a href="">Shirts</a>| 
+          <a href="">Jogger Jeans</a>| 
+          <a href="">Men Suits</a>|
+          <a href="">T Shirts</a>|
+          <a href="">Sweatshirts</a>|
+          <a href="">Jackets For Men</a>| 
+          <a href="">Tracksuits</a>| 
+          <a href="">Ripped Jeans</a>| 
+          <a href="">Ethnic Wear</a>| 
+          <a href="">Hoodies</a>| 
+          <a href="">Raksha Bandhan Gifts</a>| 
+          <a href="">Watches</a>| 
+          <a href="">Shoes</a>| 
+          <a href="">Belts</a>| 
+          <a href="">Swimwear</a>| 
+          <a href="">Dhotis</a>| 
+          <a href="">Boxers</a>| 
+          <a href="">Vests</a>|
+          <a href="">Socks</a>|
+          <a href="">Shrugs</a>|
+          <a href="">Bracelets</a>| 
+          <a href="">Rings</a>| 
+          <a href="">Sunglasses</a>| 
+          <a href="">Headphones</a>| 
+          <a href="">Wallets</a>| 
+          <a href="">Helmets</a>| 
+          <a href="">Caps</a>| 
+          <a href="">Mufflers</a>| 
+          <a href="">Gloves</a>| 
+          <a href="">Ties</a>| 
+          <a href="">Cufflinks</a>| 
+          <a href="">Men Sandals</a>| 
+          <a href="">Floaters</a>| 
+          <a href="">Flip Flops</a>| 
+          <a href="">Trunks</a>| 
+          <a href="">Bags</a>
+        </div>
+        <div class="copyright">
+          <div>
+            In case of any concern, <span><a class="contact_us" href="">Contact Us</a></span>
+            
+          </div>
+          <div>
+            © 2024  www.myntra.com. All rights reserved.
+          </div>
+          <div>
+            <a href=""> A Flipkart company </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Desclaimers to the user -->
+      <div class="footer_desclaimer">
+        <h5>MEN’S SHOPPING AT MYNTRA: A SUPERIOR EXPERIENCE </h5>
+        <p> Myntra is one of the best sites when it comes to online shopping for men. The finest of material, superior design and 
+          unbeatable style go into the making of our men’s shopping collection. Our range of online shopping men’s wear, accessories, 
+          footwear and personal care products are second to none. Compared with other men’s shopping sites, Myntra brings you the best 
+          price products which won’t hurt your pocket. With seasonal discounts on trendy casual wear, 
+          <a href="/suits" class="seoLink">suits</a>
+          ,
+          blazers, sneakers and more, online shopping for men at Myntra just gets even more irresistible!  
+        </p>
+        <h5>ONLINE SHOPPING FOR MEN: OPTIONS UNLIMITED </h5>
+        <p>At Myntra, our online shopping fashion for men collection features plenty of options to create multiple outfits. At our men’s 
+          online shop we have brought together an exhaustive range of products from the best men’s brands. Here is a list of must-haves from 
+          the wide variety of awesome products at Myntra:
+        </p>
+        <ul>
+          <li>
+            Opt for a charming yet laid-back look with cool 
+            <strong>T-shirts</strong>
+            and casual shirts worn with stylish jeans, casual trousers or 
+            shorts. Stay sharp and sophisticated with our smart options in formal shirts and trousers. Look dapper when meeting your clients 
+            in our smooth suits. Put on trendy blazers for formal occasions. On your online men’s clothes’ shopping journey, make sure you 
+            include kurtas, jackets and sherwanis from our festive wear collection. Stay warm and comfortable in sweaters and sweatshirts. 
+            Get fit and ready for adventure, with our sports and active wear collection. 
+          </li>
+          <li>
+            Once you are done with your online men’s clothes’ shopping, make sure you pick up the right accessories to complement your 
+            look. Whether you are travelling to work or outside the city our wide variety of bags, backpacks and luggage collection will 
+            ensure you are well-packed. Our beautiful Watches and smart watches work well to enhance your overall style quotient. Reach out for our sunglasses during the summers – let your eyes stay 
+            protected while you opt for maximum swag.
+          </li>
+          <li>
+            Bring impeccable style to your shoe closet with our incredible collection of footwear for men. Look classy during formal 
+            and semi-formal occasions with derbies, loafers and oxfords. Stay hip and happening in parties with boat shoes, monks and 
+            brogues from our casual men’s footwear range. Lead an active lifestyle with sneakers and running shoes from our sports 
+            footwear selection. Pick up sandals, floaters and flip-flops for a trip to the beach. We also host socks in our men’s online 
+            shopping collection. That’s basically everything under one roof!           
+          </li>
+        </ul>
+        <p>
+          Make sure you check out fun printed men’s T-shirts featuring your favourite characters from DC Comics and Marvel studios. 
+          Relive the magic of your favourite superhero from Justice League . Fly high with Superman, battle the bad guys with Batman , or get 
+          trendy in lightning-speed with a Flash T-shirt. Grab our cool Marvel Avengers T-shirts. 
+          Stay powered up with the Iron Man, or walk with the warriors in a Thor T-shirt. 
+        </p>
+        <p>
+          Our online shopping fashion for mens collection includes even more amazing merchandise such as innerwear, sleepwear, track 
+          pants, personal care, wallets, belts and other fashion accessories. 
+        </p>
+        <h5>MEN’S SHOPPING MADE EASY AT MYNTRA </h5>
+        <p>
+          Myntra is the most convenient men’s online store, what with our simplified shopping and payment procedures. With just a few 
+          clicks of the mouse or taps on your smartphone, you can buy your favorites from the best men’s brands right away.  
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

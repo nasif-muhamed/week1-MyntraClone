@@ -1,0 +1,112 @@
+footer{
+  width: 100%;
+  margin-top: 50px;
+  background-color: rgb(250, 251, 252);
+  display: flex;
+  justify-content: center;
+}
+.footerContainer{
+  width: 100%;
+  max-width: 1110px;
+  padding: 30px 0 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* footer is devided into 3 parts */
+/* 1. Menu of their products and services */
+.listOfContents{
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eaeaec ;
+  display: flex;
+  flex-wrap: wrap;
+  p{ 
+    margin-top: 19px;
+    a{
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #282c3f;
+    }
+  }
+  .big_list_head{
+    display: block;
+  }
+}
+.list{
+  margin-right: 20px;
+  width: 155px;
+  a{display: block;}
+}
+.big_list{
+  margin-right: 20px;
+  width: 360px;
+  img{
+    height: 43px;
+    margin-right: 10px;
+  }
+  .media{
+    width: 20px;
+    height: 20px;
+    margin: -25px 15px 0 0;
+  }
+  a{
+    display: inline-block;
+  }
+}
+.return{
+  margin-top: 19px;
+  align-items: center;
+  display: flex;
+}
+
+/* 2. includes Popular searchs and ©copyright part */
+.popular_search{
+  width: 100%;
+}
+.popular_head{
+  margin: -9px 5PX 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #282c3f;
+}
+.search_iterms{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0 40px -6px;
+  a{padding: 0 6px;}
+}
+.copyright{
+  display: flex;
+  justify-content: space-between;
+}
+.contact_us{
+  font-weight: 700;
+    color: #526cd0;
+}
+
+/* 3. Desclaimers to the user */
+.footer_desclaimer{
+  margin-top: 20px;
+  border-top: 1px solid #eaeaec;
+}
+.footer_desclaimer h5{
+  font-size: 14px;
+  font-weight: 700;
+  color: #535766;
+  margin-top: 30px;
+}
+.footer_desclaimer ul{
+  list-style: decimal;
+  li{
+    margin: 0 0 14px 10px;
+  }
+}
+
+/*common element in the footer*/
+footer,
+a{
+  color: #94969f;
+  font-size: 15px;
+  text-decoration: none;
+}

@@ -1,0 +1,182 @@
+/* universal selector */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Assistant;
+  box-sizing: border-box;
+}
+
+/* Header is mainly devided in to 2 a navbar and a sidebar */
+/* 1.Navbar */
+.navbar{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  min-width: 1185px;
+  height: 80px;
+  width: 100%;
+  z-index: 100;
+  padding: 0 0px 0 4%;
+  box-shadow: 0 4px 12px 0 rgba(0,0,0,.05);
+  background-color: #fff;
+}
+/*Navbar is mainly devided into 4 parts*/
+/* 1. Logo Part */
+.logo{
+  width: 53px;
+  height: 36px;  
+  overflow: hidden;
+  img{
+    position: relative;   /*logo and upcoming icons in the header are one single image so had to crop it*/
+    width: 1404px;
+    left: -462px;
+  }
+}
+/* 2. the center position of the header with list of items */
+.navbarMain{
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 3.5%;
+}
+.navLink{
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  color: #282c3f;
+  padding: 0 17px 30px;
+  text-transform: uppercase;
+}
+.navNew{
+  position: absolute;
+  color: #ff3f6c;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 0;
+  margin: 1px 0 0 -13px;
+}
+
+/* 3. the search bar in the header */
+.search{
+  flex: 1;
+  padding: 0px 35px 0 55px;
+  display: flex;
+}
+.searchBar,
+.searchIconWrap{
+  background-color: #f5f5f6;
+  height: 39px;
+  border: none;    
+  border-radius: 4px;
+}
+.searchIcon{
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  margin: 0 13px;
+  img{
+    background-color: #f5f5f6;
+    position: relative;
+    height: 75px;
+    width: 1007px;
+    left: -541px;
+  }
+}
+.searchBar{
+  flex: 1;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #696e79;
+}
+.searchBar:focus{
+  outline-style: none; 
+}
+.searchIconWrap{
+  display: flex;
+  align-items: center;
+  margin-right: -4px;
+}
+
+
+/* 4. Right Part of the navbar with some actions options */
+.navActions{  
+  width: 194px;
+  margin: 0 20px 0 10px;
+  padding-right: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+.iconWrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px;
+  color: black;
+}
+.icon{
+  height: 24px;
+  width: 20px;
+  overflow: hidden;
+  img{
+    position: relative;
+    width: 1410px;
+    height: 105px;
+  }
+  .profile{
+    left: -301px;
+    top: -56px;
+  }
+  .wishlist{
+    left: -315px;
+    top: -82px;
+  }
+  .bag{
+    left: -344px;
+    top: -56px;
+  }
+}
+
+/* 2. Sidebar */
+.sideBar{
+  bottom: 130px;
+  width: 44px;
+  height: 288px;
+  background-color: #535766;
+  color: #fff;
+  letter-spacing: 1px;
+  position: fixed;
+  right: 0;
+  z-index: 100;
+}
+.arrow{
+  margin: 24px 16px;
+  border-right: 14px solid #fff;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+.sideOfferText{
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 44px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.bellIcon{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  z-index: 100;
+  top: 295px;
+  right: 22px;
+  border-radius: 22px;
+  background-color: #1d85fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

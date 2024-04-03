@@ -1,0 +1,61 @@
+main{
+  color: #3e4152;
+  padding-top: 80px;
+}
+/* main is mainly devided into two sections a carousal section and a section of multiple collages of products with same css styles */
+/* carousel modification by overriding bootstrap */
+.styleSlider{
+  padding: 43px 0 15px 0 ;
+  .carousel-indicators {
+    bottom: -46px;
+  }
+  .carousel-dark .carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0 7px;
+    background-color: #7e818c;
+  }
+}
+
+/* common elements product collages */
+/* collage heading */
+.deals{
+  margin: 50px 0 10px 30px;
+  font-weight: 700;
+  letter-spacing: .15em;
+  font-size: 1.8em;
+}
+.dealsSub{
+  height: 50px;
+  margin: 0;
+}
+/* images container */
+.itemsContainer{
+  position: relative;
+  width: 100%;
+  padding: 0 60px;
+}
+.topBrands{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  column-gap: 30px;  
+}
+.catogories,
+.luxe{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  column-gap: 30px;  
+}
+.brands,
+.indianWear,
+.sports,
+.footwear,
+.accessories{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  column-gap: 30px;
+}
+.itemColumn img{
+  width: 100%;
+}
